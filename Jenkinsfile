@@ -1,11 +1,5 @@
 pipeline {
     agent any
-    branches {
-        every {
-            $class = 'BranchSource'
-            spec = '*/test'
-        }
-    }
     stages {
         stage('Check Files') {
             steps {
